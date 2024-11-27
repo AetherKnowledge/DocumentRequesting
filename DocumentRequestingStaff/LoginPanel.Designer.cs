@@ -40,7 +40,6 @@
             panel4 = new Panel();
             passwordBox = new TextBox();
             label3 = new Label();
-            loginBtn = new CustomControls.RoundedButton();
             panel3 = new Panel();
             label1 = new Label();
             panel1 = new Panel();
@@ -77,7 +76,6 @@
             panel2.Controls.Add(panel6);
             panel2.Controls.Add(panel5);
             panel2.Controls.Add(panel4);
-            panel2.Controls.Add(loginBtn);
             panel2.Controls.Add(panel3);
             panel2.Dock = DockStyle.Fill;
             panel2.Location = new Point(637, 0);
@@ -179,32 +177,6 @@
             label3.TabIndex = 3;
             label3.Text = "Password:";
             label3.TextAlign = ContentAlignment.TopRight;
-            // 
-            // loginBtn
-            // 
-            loginBtn.Anchor = AnchorStyles.Top;
-            loginBtn.BackColor = Color.Transparent;
-            loginBtn.BackImageSize = new Size(0, 0);
-            loginBtn.BorderColor = Color.Black;
-            loginBtn.BorderRadius = 10;
-            loginBtn.BorderThickness = 2;
-            loginBtn.ButtonColor = Color.FromArgb(128, 175, 129);
-            loginBtn.FlatAppearance.BorderSize = 0;
-            loginBtn.FlatStyle = FlatStyle.Flat;
-            loginBtn.Font = new Font("Aptos SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            loginBtn.ForeColor = Color.White;
-            loginBtn.HoverColor = Color.FromArgb(89, 122, 90);
-            loginBtn.IconLocation = CustomControls.RoundedButton.ImageLocation.Center;
-            loginBtn.Image = null;
-            loginBtn.ImageSize = new Size(0, 0);
-            loginBtn.Location = new Point(266, 360);
-            loginBtn.Name = "loginBtn";
-            loginBtn.PressedColor = Color.FromArgb(62, 85, 62);
-            loginBtn.Size = new Size(133, 53);
-            loginBtn.TabIndex = 5;
-            loginBtn.Text = "LOGIN";
-            loginBtn.UseVisualStyleBackColor = false;
-            loginBtn.Click += loginBtn_Click;
             // 
             // panel3
             // 
