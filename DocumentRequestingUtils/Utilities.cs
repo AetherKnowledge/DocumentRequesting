@@ -24,7 +24,7 @@ namespace DocumentRequesting
 {
     public sealed class Utilities
     {
-        internal static readonly string DBString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=Database.accdb";
+        internal static readonly string DBString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=..\\..\\..\\..\\Database.accdb";
 
         private static bool changeP1 = true;
         private static MaterialForm? _p1 = null;
