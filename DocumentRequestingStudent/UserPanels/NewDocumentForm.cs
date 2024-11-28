@@ -204,7 +204,7 @@ namespace DocumentRequesting.RequestFormPanels
             Request request = new Request(type,null,RequestStatus.Pending,firstName,midName,lastName,studentID,birthDate,gender,mobileNumber,email,address,course,section,used,null);
 
 
-            PopupForm popup = new PopupForm("You have successfuly added another form", "Success");
+            PopupForm popup = new PopupForm("Your request is submitted successfully.", "Success");
             popup.ShowDialog();
 
             this.Activate();

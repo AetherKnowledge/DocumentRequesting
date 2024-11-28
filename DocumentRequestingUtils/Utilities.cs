@@ -24,7 +24,15 @@ namespace DocumentRequesting
 {
     public sealed class Utilities
     {
-        internal static readonly string DBString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=..\\..\\..\\..\\Database.accdb";
+        internal static readonly string DBString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=Database.accdb";
+
+        static Utilities()
+        {
+            if (File.Exists("..\\..\\..\\..\\Database.accdb"))
+            {
+                File.Copy("..\\..\\..\\..\\Database.accdb","Database.accdb",true);
+            }
+        }
 
         private static bool changeP1 = true;
         private static MaterialForm? _p1 = null;
